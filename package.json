@@ -1,0 +1,45 @@
+{
+  "name": "webpack-typescript-boilerplate",
+  "version": "0.0.1",
+  "description": "웹펙 보일러 플레이트",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Ko-JiHoon@github.com/Ko-JiHoon/webpack-typescript-boilerplate.git"
+  },
+  "author": "ko ji hoon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ko-JiHoon/webpack-typescript-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Ko-JiHoon/webpack-typescript-boilerplate#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/plugin-transform-runtime": "^7.16.4",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-typescript": "^7.16.0",
+    "@babel/runtime": "^7.16.3",
+    "@babel/runtime-corejs3": "^7.16.3",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.3.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "prettier": "^2.5.0",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.2",
+    "webpack": "^5.64.4",
+    "webpack-bundle-analyzer": "^4.5.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0"
+  },
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
+}
