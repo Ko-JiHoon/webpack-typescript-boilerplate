@@ -2,12 +2,11 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  // 번들링 시작 위치
   entry: {
     '@babel/polyfill': './src/index.ts',
   },
   output: {
-    path: path.join(__dirname, '/dist'), // 번들 결과물 위치
+    path: path.join(__dirname, '/dist'),
     filename: 'whatap-browser-agent.js',
     library: 'WhatapBrowserAgent',
     libraryTarget: 'umd',
@@ -29,20 +28,20 @@ module.exports = {
     ],
   },
   resolve: {
-    modules: [path.join(__dirname, 'src'), 'node_modules'], // 모듈 위치
+    modules: [path.join(__dirname, 'src'), 'node_modules'],
     extensions: ['.ts', '.js'],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html', // 템플릿 위치
+      template: './src/index.html',
     }),
   ],
   devServer: {
-    host: 'localhost', // live-server host 및 port
+    host: 'localhost',
     port: 5500,
   },
   performance: {
     hints: process.env.NODE_ENV === 'production' ? 'warning' : false,
   },
-  mode: 'production', // 번들링 모드 development / production
+  mode: 'production',
 };
