@@ -2,9 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: {
-    '@babel/polyfill': './src/index.ts',
-  },
+  entry: './src/index.ts',
   output: {
     path: path.join(__dirname, '/dist'),
     filename: 'whatap-browser-agent.js',

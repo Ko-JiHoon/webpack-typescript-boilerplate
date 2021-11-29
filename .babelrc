@@ -3,7 +3,9 @@
     [
       "@babel/preset-env",
       {
-        "target": {"ie": 11}
+        "useBuiltIns": "usage",
+        "targets": {"ie": 11},
+        "modules":"cjs"
       }
     ],
     ["@babel/preset-typescript"]
@@ -12,11 +14,11 @@
     [
       "@babel/plugin-transform-runtime",
       {
-        "absoluteRuntime": false,
-        "corejs": 3,
-        "helpers": true,
-        "regenerator": true,
-        "useESModules": false
+        // "absoluteRuntime": false,
+        "corejs": 3
+        // "helpers": true,
+        // "regenerator": true,
+        // "useESModules": false
       }
     ]
   ]
