@@ -1,9 +1,11 @@
-namespace Name {
-  export class init {
-    constructor() {}
-  }
+import join from 'lodash/join';
+
+function component() {
+  const element = document.createElement('div');
+
+  element.innerHTML = join(['Hello', 'webpack'], ' ');
+
+  return element;
 }
 
-const cls = new Name.init();
-
-export {};
+document.body.appendChild(component());
